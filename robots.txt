@@ -1,0 +1,8 @@
+# Crawling is intentionally ALLOWED so crawlers can read the
+# <meta name="robots" content="noindex"> directive on the page and honor it.
+#
+# Using "Disallow: /" here would be counterproductive: it blocks crawlers from
+# reading the noindex tag, which can result in a URL-only listing appearing in
+# search results anyway. Allow + noindex is the reliable way to stay unindexed.
+User-agent: *
+Disallow:
